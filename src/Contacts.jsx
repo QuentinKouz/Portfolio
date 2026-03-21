@@ -8,9 +8,9 @@ import { Toast } from "primereact/toast";
 import useWindowSize from "./hooks/useWindowSize";
 import useInView from "./hooks/useInView";
 
-const SERVICE_ID = "service_uc7ntyk";
-const TEMPLATE_ID = "template_vwy4hqs";
-const PUBLIC_KEY = "aeBvHuj5CUchLlQgR";
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 export default function Contacts() {
   const toast = useRef(null);
